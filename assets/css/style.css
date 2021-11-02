@@ -1,0 +1,143 @@
+@import url('fonts.css');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+body {
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+._container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.wrapper {
+  min-height: 100%;
+}
+.header {
+  padding-top: 105px;
+  text-align: center;
+}
+.header__title {
+  font-size: 34px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 35px;
+  letter-spacing: 4px;
+}
+.header__title::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  border-bottom: 5px solid #DFDCDC;
+  padding: 0 5px;
+}
+.header__text {
+  color: #696969;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 60px;
+  padding: 0 5px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cards {
+}
+.cards__item {
+  flex-basis: 270px;
+}
+.cards__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  min-height: 270px;
+  margin-bottom: 15px;
+  transition: .3s;
+}
+.cards__icon a {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-color: #00CCE9;
+  text-align: center;
+  line-height: 3.3;
+  display: none;
+}
+.cards__photo:hover .cards__icon {
+  background: #00B6DE;
+  cursor: pointer;
+}
+.cards__photo:hover .cards__icon a {
+  display: inline-block;
+}
+.cards__icon a:hover {
+  opacity: .5;
+}
+.cards__icon a:hover img {
+  opacity: .6;
+}
+.cards__icon-jhon {
+  background: url('../images/John.png') center center/cover no-repeat;
+}
+.cards__icon-alex {
+  background: url('../images/Alex.png') center center/cover no-repeat;
+}
+.cards__icon-elena {
+  background: url('../images/Elena.png') center center/cover no-repeat;
+}
+.cards__icon-lily {
+  background: url('../images/Lily.png') center center/cover no-repeat;
+}
+.cards__icon-link {
+}
+.icon__twitter {
+}
+.icon__fb {
+}
+.icon__google {
+}
+.cards__name {
+  font-size: 18px;
+}
+.cards__profession {
+  color: #696969;
+  font-weight: 300;
+}
